@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>BTM'S GAME SITE</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="display-4 title">BTM'S GUESS THE NUMBER</h1>
+        <p class="lead">Play a mind game with computer and crash it...</p>
+        <audio id="myAudio" src="game__music.mp3" preload="auto"></audio>
+        <span><strong>Click below play button and enjoy the game</strong></span>
+        <a href="#" class="play__button" id="play"
+          ><i class="fa fa-play fa-2x"></i
+        ></a>
+        <hr class="my-4" />
+        <p>
+          The game level's are upto 20.Win from the computer then you will be
+          released.
+        </p>
+      </div>
+      <div class="level-counter">
+        <span class="badge bg-primary human" id="human" value="0"></span>
+        <span class="badge bg-danger bot" id="bot"></span>
+      </div>
+      <div class="mainSearch">
+        <form class="d-flex inputs">
+          <input
+            class="form-control mr-sm-2 searchBar"
+            id="searchBar"
+            type="search"
+            placeholder="guess 1 to 10 range number"
+            aria-label="Search"
+          />
+          <audio id="success" src="claps.mp3" preload="auto"></audio>
+          <audio id="danger" src="danger.mp3" preload="auto"></audio>
+          <button
+            class="btn btn-outline-success my-2 my-sm-0 searchButton"
+            id="submit"
+            type="submit"
+          >
+            Guess
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
